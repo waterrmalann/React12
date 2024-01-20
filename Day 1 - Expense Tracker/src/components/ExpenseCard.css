@@ -1,0 +1,97 @@
+.expense-card {
+    background: #111;
+    color: white;
+    border-radius: 2rem;
+    padding-block: 2rem 1.75rem;
+    width: min(70%, 60.5rem);
+    margin-inline: auto; 
+    margin-block: 2rem;
+}
+
+.expense-card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.expense-card h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.expense-card h1:not(:first-child)::before {
+    content: '';
+    display: block;
+    height: 64px;
+    width: 2px;
+    background: white;
+    margin-right: 1rem;
+}
+
+.expense-list {
+    display: block;
+}
+
+.expense-item {
+    background: rgba(14, 14, 14, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 420px;
+    border-radius: 1.75rem;
+    margin-inline: auto;
+    margin-block: 1rem;
+    padding: 1rem;
+}
+
+.expense-item-icon {
+    background: lightcoral;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.expense-item-icon:hover {
+    background: coral;
+    cursor: pointer;
+}
+
+.expense-item-head {
+    display: flex;
+    gap: 1rem;
+}
+
+.expense-item-body {
+    text-align: left;
+}
+
+.expense-item-body p {
+    color: darkslategray;
+}
+
+.expense-item-price {
+    color: gray;
+}
+
+.input-group {
+    display: block;
+    margin-block: 1rem;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: .5rem;
+}

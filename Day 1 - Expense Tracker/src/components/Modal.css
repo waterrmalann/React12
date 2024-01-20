@@ -1,0 +1,19 @@
+.modal {
+    background: rgba(14, 14, 14, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.modal-card {
+    background: white;
+    border-radius: 2rem;
+    min-height: 320px;
+    min-width: 512px;
+    padding: 2rem;
+}

@@ -1,0 +1,14 @@
+.toggle-active {
+    outline: 1px solid blue;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.toggle-buttons button {
+    background: white;
+    border: 1px solid rgba(14, 14, 14, 0.25);
+}
