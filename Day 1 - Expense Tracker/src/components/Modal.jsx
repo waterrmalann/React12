@@ -49,15 +49,15 @@ const Modal = ({ isOpen, setModalOpen, submitTransaction }) => {
     return (
         <div className="modal" onClick={handleOuterClick}>
             <div className="modal-card">
-                <h1>Expense</h1>
+                <h2>Add Transaction</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="input-group">
-                        <label htmlFor='amount'>Amount</label>
-                        <input id="amount" type="number" value={amount} onChange={e => setAmount(e.target.value)} />
-                    </div>
                     <div className="input-group">
                         <label htmlFor='title'>Title</label>
                         <input id="title" type="text" value={title} onChange={e => setTitle(e.target.value)} />
+                    </div>
+                    <div className="input-group">
+                        <label htmlFor='amount'>Amount</label>
+                        <input id="amount" type="number" value={amount} onChange={e => setAmount(e.target.value)} />
                     </div>
                     <div className="input-group">
                         <label htmlFor='description'>Description</label>

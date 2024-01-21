@@ -8,11 +8,16 @@
     margin-block: 2rem;
 }
 
-.expense-card div {
+.expense-card > div {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.expense-card > div > div:not(:last-child) {
+    border-right: 2px solid white;
+    padding-right: 1rem;
 }
 
 .expense-card h1 {
@@ -23,21 +28,13 @@
     font-size: 2.5rem;
 }
 
-.expense-card h1:not(:first-child)::before {
-    content: '';
-    display: block;
-    height: 64px;
-    width: 2px;
-    background: white;
-    margin-right: 1rem;
-}
 
 .expense-list {
     display: block;
 }
 
 .expense-item {
-    background: rgba(14, 14, 14, 0.05);
+    background: var(--expense-item-background);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +46,7 @@
 }
 
 .expense-item-icon {
-    background: lightcoral;
+    background: lightgray;
     padding: 1rem;
     border-radius: 10px;
     width: 52px;
@@ -59,9 +56,12 @@
     place-content: center;
 }
 
-.expense-item-icon:hover {
-    background: coral;
-    cursor: pointer;
+.expense-item-icon.expense {
+    background: lightcoral;
+}
+
+.expense-item-icon.income {
+    background: lightgreen;
 }
 
 .expense-item-head {

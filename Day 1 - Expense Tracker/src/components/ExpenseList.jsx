@@ -8,7 +8,7 @@ const ExpenseList = ({ transactions }) => {
             { transactions.map(transaction => (
                 <div key={transaction.id} className="expense-item">
                     <div className="expense-item-head">
-                        <div className="expense-item-icon">
+                        <div className={"expense-item-icon " + (transaction.isExpense ? 'expense' : 'income')}>
                             <FaMoneyBill />
                         </div>
                         <div className="expense-item-body">
@@ -17,7 +17,7 @@ const ExpenseList = ({ transactions }) => {
                         </div>
                     </div>
                     <div className="expense-item-price">
-                        <h4 style={{color: transaction.isExpense ? 'darkred' : 'gray'}}>${transaction.amount}</h4>
+                        <h4 style={{color: transaction.isExpense ? 'darkred' : 'darkgreen'}}>${transaction.amount}</h4>
                     </div>
                 </div>
             ))}
