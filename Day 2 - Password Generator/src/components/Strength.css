@@ -1,0 +1,32 @@
+.strength-box {
+    padding: 1rem;
+    background: rgba(14, 14, 14, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 1.5rem;
+}
+
+.strength-box > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-mono);
+}
+
+.strength-bars {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.strength-bars > div {
+    height: 25px;
+    width: 10px;
+}
+
+.strength-bars > div.active {
+    background: white;
+}
+.strength-bars > div.inactive {
+    border: 1px solid white;
+}

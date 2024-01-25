@@ -1,0 +1,130 @@
+.card {
+    background: rgba(14, 14, 14, 0.45);
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.card-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: .2s border ease-in-out;
+}
+
+.card-input:hover {
+    border-bottom: 1px solid var(--secondary);
+    transition: .2s border ease-in-out;
+}
+
+.card-input:active {
+    border-color: white;
+}
+
+.card-input:has(:focus-within) {
+    border-color: white;
+}
+
+.card-input input {
+    border: unset;
+    outline: unset;
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-mono);
+    font-weight: bold;
+    background: transparent;
+    color: gray;
+}
+
+.card-input svg {
+    margin-inline: 1rem;
+    fill: var(--secondary);
+}
+
+.btn {
+    border: 1px solid var(--secondary);
+    background: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    color: lightgray;
+    transition: .2s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1rem;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 1px var(--secondary);
+    transition: .2s;
+}
+
+.btn:active {
+    box-shadow: 4px 4px 1px white;
+    border-color: white;
+}
+
+.length-slider {
+    display: flex;
+    margin-block: 1rem;
+    align-items: center;
+}
+
+.length-slider input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: rgba(14, 14, 14, 0.75);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 2rem;
+
+}
+
+.length-slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--secondary);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.length-slider input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--secondary);
+    cursor: pointer;
+}
+
+.length-slider p {
+    display: block;
+    margin-inline: 1rem;
+    font-family: var(--font-mono);
+    font-size: 1.75rem;
+    color: var(--secondary);
+    font-weight: bold;
+    min-width: 2ch;
+    text-align: right;
+}
+
+.clipboard-btn {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.clipboard-btn:hover {
+    fill: white;
+    transition: .2s;
+}
